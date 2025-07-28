@@ -4,6 +4,9 @@ import JSZip from "jszip";
 import { saveAs } from "file-saver";
 import ReactDom from 'react-dom/client'
 import './index.css?url' // Updated import
+import { Buffer } from 'buffer';
+window.Buffer = Buffer;
+
 
 export default function App() {
   const [prompt, setPrompt] = useState("");
